@@ -53,7 +53,7 @@ public class AgentMovement : MonoBehaviour
                     else if (agent.agentTypeID == NavMesh.GetSettingsByIndex(1).agentTypeID)
                     {
                         Debug.Log("Secret Agent stepped on ice");
-                        agent.speed *= 1 / BoostMultiplier;
+                        agent.speed *= (1 / BoostMultiplier) * 5;
                         justEntered = false;
                     }
                 }
